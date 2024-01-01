@@ -1,4 +1,4 @@
-import '/src/Components/loading.css'
+
 
 export default function Loading({inputfromsearch}){
     // You can add any UI inside Loading, including a Skeleton.
