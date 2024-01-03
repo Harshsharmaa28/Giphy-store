@@ -58,9 +58,9 @@ export default function Giphy({ updatesearchterm, fetchData, inputfromsearch, da
                     Home
                 </button>
             </div>
-            <div className="vsm:max-sm:max-w-[70%] vsm:max-sm:flex vsm:max-sm:mx-[4rem] justify-center h-[200px]">
-                <div className="mt-12 flex justify-center gap-5 w-[100%] h-[70px]">
-                    <div className="vsm:max-sm:item-center rounded-xl items-center bg-gray-200 flex w-[80%] h-[64px]">
+            <div className=" vsm:max-sm:flex  vsm:max-sm:items-center justify-center w-[] md:h-[200px]">
+                <div className="mt-12 flex vsm:max-sm:max-w-[100%] justify-center gap-5 md:w-[100%] h-[70px]">
+                    <div className="vsm:max-sm:max-w-[65%]  rounded-xl items-center bg-gray-200 flex md:w-[80%] h-[64px]">
                         <img
                             className="mx-4 mt-1"
                             width="44"
@@ -70,7 +70,7 @@ export default function Giphy({ updatesearchterm, fetchData, inputfromsearch, da
                         />
                         <input
                             onChange={(e) => setSearchInput(e.target.value)}
-                            className="bg-gray-200 text-2xl font-semibold outline-0 rounded-xl w-[642px] h-[64px] placeholder-black"
+                            className="bg-gray-200 vsm:max-sm:max-w-[100%] text-2xl font-semibold outline-0 rounded-xl md:w-[642px] h-[64px] placeholder-black"
                             value={inputfromsearch}
                             type="text"
                         />
@@ -78,13 +78,13 @@ export default function Giphy({ updatesearchterm, fetchData, inputfromsearch, da
                     <button
                         onClick={handlebutton}
                         type="button"
-                        className="vsm:max-sm:w-[100px] vsm:max-sm:ml-[6.2rem] vsm:max-sm:text-md text-lg rounded-xl bg-black w-[110px] h-[64px] font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                        className="vsm:max-sm:w-[90px] vsm:max-sm:h-[62px] vsm:max-sm:mt-[1px] vsm:max-sm:text-md text-lg rounded-xl bg-black md:w-[110px] md:h-[64px] font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                     >
                         Search
                     </button>
                 </div>
             </div>
-            <div className="max-w-screen justify-between vsm:max-sm:ml-12 vsm:max-sm:mt-10 lg:mx-36  gap-5 flex flex-wrap">
+            <div className="max-w-screen justify-between vsm:max-sm:justify-center vsm:max-sm:mt-10 lg:mx-36  gap-5 flex flex-wrap">
                 {showgif()}
             </div>
             <div className="mt-20">

@@ -102,7 +102,7 @@ export function Homepage() {
             </div>
 
             <div className="vsm:max-sm:flex vsm:max-sm:justify-center vsm:max-sm: vsm:max-sm: lg:flex lg:gap-5  md:w-[816px] md:h-[122px]">
-              <div className="vsm:max-sm:w-[100%] vsm:max-sm: vsm:max-sm: vsm:max-sm: rounded-xl items-center bg-gray-200 flex w-[742px] h-[74px]">
+              <div className="vsm:max-sm:max-w-[45%] vsm:max-sm: vsm:max-sm: vsm:max-sm: rounded-xl items-center bg-gray-200 flex w-[742px] h-[74px]">
                 <img
                   className="vsm:max-sm:w-[34px] vsm:max-sm:h-[34px] mx-4 mt-1"
                   width="44"
@@ -112,7 +112,7 @@ export function Homepage() {
                 />
                 <input
                   onChange={(e) => setSearchInput(e.target.value)}
-                  className="bg-gray-200 vsm:max-sm:w-[70%] vsm:max-sm:text-lg font-semibold outline-0 rounded-xl w-[642px] h-[64px] text-xl  placeholder-black"
+                  className="bg-gray-200 vsm:max-sm:max-w-[] vsm:max-sm:text-lg font-semibold outline-0 rounded-xl w-[642px] h-[64px] text-xl  placeholder-black"
                   placeholder="Article name or keywords..."
                   type="text"
                 />
@@ -134,7 +134,7 @@ export function Homepage() {
               <button
                 onClick={checkinput}
                 type="button"
-                className=" sm:hidden vsm:max-sm:h-[54px] text-lg rounded-xl bg-black w-[110px] h-[74px] font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                className=" sm:hidden vsm:max-sm:min-h-[54px]  vsm:max-sm: text-lg rounded-xl bg-black w-[110px] md:h-[74px] font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
               >
                 Search
               </button>
